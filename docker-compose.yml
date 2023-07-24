@@ -10,8 +10,6 @@ services:
       - network-backend
   api:
     build: ./backend
-    depends_on:
-      - mongo
     ports:
       - "3001:3001"
     networks: 
